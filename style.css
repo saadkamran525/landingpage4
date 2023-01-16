@@ -1,0 +1,1424 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/css/font/Inter-VariableFont_slnt,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.thumb {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.nav-preview {
+    width: 100%;
+    /* height: 60px; */
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+.logo-preview {
+    padding: 12px 20px;
+}
+
+.logo-preview img {
+    width: auto;
+    height: 18px;
+}
+
+.button-preview {
+    /* display: inline-block; */
+    padding: 12px 20px;
+}
+
+.button-preview button {
+    cursor: pointer;
+    background-color: #6f9a37;
+    border-color: transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1.5;
+    color: beige;
+}
+
+.main-logo {
+    display: flex;
+    margin-top: 30px;
+    gap: 0.5em;
+    float: left;
+    /* justify-content: center; */
+}
+
+.logo-img img {
+    width: 25px;
+    margin-top: 5px;
+}
+
+.logo-heading h5 {
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2.3px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    /* background: #3E8DA8; */
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+    z-index: 99;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* background: red; */
+    padding: 0 50px;
+}
+
+.navbar .logo a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .navbar .nav-links {
+    line-height: 70px;
+    height: 100%;
+}
+
+nav .navbar .links {
+    display: flex;
+}
+
+nav .navbar .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 27px;
+}
+
+nav .navbar .links li a {
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links .bx-menu {
+    transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow {
+    /* background: red; */
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    /* padding: 2px; */
+}
+
+nav .navbar .links li .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: black;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+}
+
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .home-sub-menu,
+nav .navbar .links li:hover .js-sub-menu,
+nav .navbar .links li:hover .more-sub-menu {
+    display: block;
+}
+
+.navbar .links li .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .links li .sub-menu a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar .links li .sub-menu .more-arrow {
+    line-height: 40px;
+}
+
+.navbar .nav-links .sidebar-logo {
+    display: none;
+}
+
+.navbar .bx-menu {
+    display: none;
+}
+
+.Img-Section {
+    width: 100%;
+    height: auto;
+}
+
+.section-img img {
+    width: 100%;
+    height: auto;
+    /* margin-top: 20px; */
+    /* text-align: center; */
+    margin-left: -200px;
+
+
+}
+
+.main-section {
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    /* padding: 5em 0em 4em 0em; */
+
+
+}
+
+.section-box {
+    width: 60%;
+    background-color: #131315;
+    padding: 40px 50px 40px 50px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    right: 10%;
+    z-index: 1;
+
+}
+
+.box-lines img {
+    width: auto;
+    margin-top: 10px;
+}
+
+.box-heading h5 {
+    width: 100%;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.box-heading2 h1 {
+    width: 100%;
+    font-family: "Cambay", Sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.box-para p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.77);
+    font-size: 19px;
+}
+
+.box-button button {
+    font-family: "Cambay", Sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: 1.1px;
+    background-color: #465FFF;
+    border-color: transparent;
+    border-radius: 0px 0px 0px 0px;
+    padding: 21px 45px 15px 45px;
+    color: white;
+}
+
+.conference {
+    margin-top: 400px;
+}
+
+.conference-heading h5 {
+    margin-top: 250px;
+    width: 100%;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.conference-img1 img {
+    margin-top: 10px;
+    width: 25%;
+    /* font-size: 10px; */
+}
+
+.sub-heading h5 {
+    margin-top: 15px;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.conference-para p {
+    margin-top: 15px;
+    width: 100%;
+    color: #6D6F52;
+    font-size: 17px;
+    font-family: cabin, sans-serif;
+}
+
+.conference-img2 img {
+    margin-top: 10px;
+    width: 25%;
+    /* font-size: 10px; */
+}
+
+.conference-img3 img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 12%;
+    top: -20%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.conference-img4 img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.schdule {
+    margin-top: 150px;
+}
+
+.background-color {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    /* padding: 30px; */
+}
+
+.sechdule-time {
+    background-color: #465FFF;
+    padding: 41px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.schdule-heanding a {
+    padding: 30px;
+    text-align: center;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.schdule-heanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schdule-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 15px;
+}
+
+.profiel-img img {
+    width: auto;
+    font-size: 10px;
+}
+
+.profiel-img img:hover {
+    opacity: 0.9;
+}
+
+.profiel-info h5 {
+    margin-top: 10px;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.schdule-heanding a:hover {
+    text-decoration: none;
+    color: #131315;
+}
+
+.schdule-button {
+    text-align: center;
+}
+
+.schdule-button button {
+    margin-top: 30px;
+    text-align: center;
+    border-color: #465FFF;
+    font-size: 15px;
+    padding: 20px 40px 20px 40px;
+    color: #465FFF;
+    background-color: white;
+    text-align: center;
+    border: 3px solid;
+}
+
+.schdule-button button:hover {
+    background-color: #465FFF;
+    color: white;
+}
+
+.background-img {
+    background-image: url("../landingpage5/images/male-speaker-speak-to-diverse-business-people-in-YLUE4PT.jpg");
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.background {
+    /* background-color: #465FFF; */
+    opacity: 0.9;
+    background: #5E73Fd;
+    width: 100%;
+    height: 100%;
+}
+
+.speaker-heading h5 {
+    width: 100%;
+    font-family: "Cambay", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 150px;
+}
+
+.speaker-para p {
+    margin-top: 30px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.speaker-button button {
+    border: 3px solid;
+    background-color: transparent;
+    padding: 15px 45px 15px 45px;
+    border-color: white;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.speaker-button button:hover {
+    background-color: white;
+    color: #465FFF;
+}
+
+.profile-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+.profile-img img:hover {
+    opacity: 0.8;
+}
+
+.profile-info {
+    background-color: #FFFFFF;
+    height: 100px;
+}
+
+.profile-info h3 {
+    /* margin-top: 20px; */
+    padding: 10px;
+    text-align: center;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.profile-info h5 {
+    text-align: center;
+    font-family: "Cambay", Sans-serif;
+    font-size: 20px;
+}
+
+.ticket-box {
+    margin-top: 100px;
+    width: 100%;
+    border: 7px solid #FAFAFA;
+}
+
+.ticket-box:hover {
+    background-color: #FAFAFA;
+}
+
+.dollar h5 {
+    text-align: center;
+    margin-top: 40px;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.box-line {
+    text-align: center;
+}
+
+.ticket-heading h5 {
+    text-align: center;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.ticket-list li {
+    color: #6d6f82;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ticket-box2 {
+    margin-top: 150px;
+    width: 100%;
+    border: 7px solid #FAFAFA;
+}
+
+.ticket-box2:hover {
+    background-color: #FAFAFA;
+}
+
+.ticket-button {
+    text-align: center;
+}
+
+.ticket-button button {
+    background-color: #465FFF;
+    color: white;
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    border-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.Registration {
+    margin-top: 200px;
+    /* text-align: center; */
+}
+
+.registeration-heading h5 {
+    width: 100%;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.registeration-para p {
+    margin-top: 30px;
+    color: #6D6F82;
+    font-family: Cabin, sans-serif;
+    font-size: 17px;
+}
+
+.registration-list {
+    margin-top: 50px;
+}
+
+.registration-list li {
+    margin-top: 20px;
+    color: #6D6F82;
+    font-family: Cabin, sans-serif;
+    font-size: 15px;
+}
+
+.registration-list i {
+    color: #465FFF;
+    border: 2px solid #465FFF;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+.main-sponser {
+    margin-top: 100px;
+}
+
+.sponser-heading h5 {
+    text-align: center;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.sponser-logo {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7em;
+    opacity: 0.7;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+
+.sponser-logo img {
+    width: auto;
+    height: 60px;
+}
+
+.contact-background {
+    background-image: url(../landingpage5/images/business-people-looking-at-camera-in-business-D4JVLS3.jpg);
+    width: 100%;
+    height: 550px;
+    margin-top: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.backgorund-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 270px;
+    background-color: #465FFF;
+    width: 100%;
+    height: 280px;
+    opacity: 0.9;
+    /* border-radius: 8px; */
+}
+
+.main-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.icon-location i {
+    background-color: transparent;
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    margin-left: 50px;
+    border: 1px solid;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.info-heading h5 {
+    width: 100%;
+    color: white;
+    margin-top: 75px;
+    font-family: "Cambay", Sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.info-address p {
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+}
+
+.clevent h5 {
+    width: 100%;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.clevent-para p {
+    width: 100%;
+    margin-top: 20px;
+    color: #6D6F82;
+    font-size: 17px;
+}
+
+.address-heading h5 {
+    width: 100%;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.address-para p {
+    width: 100%;
+    margin-top: 20px;
+    color: #6D6F82;
+    font-size: 17px;
+}
+
+.address-state p {
+    color: #6D6F82;
+    font-size: 17px;
+}
+
+.contact-heading h5 {
+    width: 100%;
+    color: #131315;
+    font-family: "Cambay", Sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.contact-para p {
+    width: 100%;
+    margin-top: 20px;
+    color: #6D6F82;
+    font-size: 17px;
+}
+
+.contact-email a {
+    color: #6D6F82;
+}
+
+.contact-email a:hover {
+    color: #6D6F82;
+    text-decoration: none;
+}
+
+.contact-number a {
+    color: black;
+    font-size: 25px;
+    /* font-weight: bold; */
+}
+
+.contact-number a:hover {
+    color: #6D6F82;
+    text-decoration: none;
+}
+
+.contact-number i {
+    /* margin-top: 5px; */
+    font-size: 27px;
+    color: #465FFF;
+}
+
+.footer {
+    margin-top: 70px;
+}
+
+.footer-info p {
+    text-align: center;
+    font-size: 16px;
+    color: #6D6F82;
+    padding: 2px;
+}
+
+.fa-arrow-left {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 767px) {
+    nav .navbar .nav-links {
+        max-width: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        float: right;
+
+    }
+
+    .menu {
+        display: none;
+        /* position: absolute; */
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 16px 0;
+        z-index: 1;
+        margin-left: -230px;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: black;
+        transition: 0.3s ease;
+    }
+
+
+    .menu a+a {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .fa-arrow-left {
+        transform: rotate(0deg);
+        transition: 1s linear;
+        float: right;
+        border: 3px solid;
+        padding: 20px;
+        color: #f1f1f1;
+    }
+
+    .fa-arrow-left .open {
+        transform: rotate(180deg);
+        transition: 1s linear;
+    }
+
+    .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 190px;
+        font-size: 13px;
+        font-family: "Cambay", Sans-serif;
+        margin-left: 0px;
+        margin-top: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+
+    .section-img img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .box-heading2 h1 {
+        width: 100%;
+        font-family: "Cambay", Sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .main-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+
+
+    }
+
+    .section-img img {
+        width: 100%;
+        /* height: 560px; */
+        /* margin-top: 20px; */
+        /* text-align: center; */
+        margin-left: 0px;
+
+
+    }
+
+    .section-box {
+        width: 100%;
+        background-color: #131315;
+        padding: 10px 20px 10px 20px;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        z-index: 0;
+
+
+    }
+
+    .main-conference {
+        width: 100%;
+        height: auto;
+    }
+
+    .conference-img3 img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    .conference-img4 img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 30%;
+        margin-bottom: 30px;
+    }
+
+    .schdule {
+        margin-top: 800px;
+    }
+
+    .schdule-heanding a {
+        margin-top: 20px;
+        padding: 30px;
+        text-align: center;
+        color: #131315;
+        font-family: "Cambay", Sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .background-img {
+        background-image: url("../landingpage5/images/male-speaker-speak-to-diverse-business-people-in-YLUE4PT.jpg");
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .Registration {
+        margin-top: 50px;
+        /* text-align: center; */
+    }
+
+    .contact-background {
+        background-image: url(../landingpage5/images/business-people-looking-at-camera-in-business-D4JVLS3.jpg);
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .backgorund-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 270px;
+        background-color: #465FFF;
+        width: 100%;
+        height: auto;
+        opacity: 0.9;
+        /* border-radius: 8px; */
+    }
+
+    .icon-location i {
+        background-color: transparent;
+        color: white;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50px;
+        margin-left: 0px;
+        border: 1px solid;
+        border-radius: 60px;
+        padding: 10px 20px;
+    }
+
+    .profile-img img {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .profile-info {
+        background-color: #FFFFFF;
+        height: auto;
+    }
+
+    .bx-menu:before {
+        content: "\eac1";
+    }
+
+    .navbar .bx-menu {
+        display: block;
+    }
+
+    .navbar .bx-menu,
+    .navbar .nav-links .bx-x {
+        transform: rotate(180deg);
+    }
+
+    .navbar li:hover .fa-angle-left,
+    .navbar .nav-links li:hover .fa-angle-right {
+        transform: rotate(0deg);
+    }
+
+    nav .navbar .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        max-width: 270px;
+        width: 100%;
+        background: #3E8DA8;
+        line-height: 40px;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    .navbar .nav-links.fa-arrow-right {
+        transform: rotate(180deg);
+    }
+
+    .navbar .nav-links .sidebar-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar-logo .logo-name {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .sidebar-logo i,
+    .navbar .bx-menu {
+        font-size: 25px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    nav .navbar .links {
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .navbar .links li .arrow {
+        line-height: 40px;
+    }
+
+    nav .navbar .links li {
+        display: block;
+    }
+
+    nav .navbar .links li .sub-menu {
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        display: none;
+    }
+
+    nav .navbar .links li .sub-menu li {
+        border-bottom: none;
+
+    }
+
+
+    nav .navbar .links li:hover .more-sub-menu,
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .home-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu {
+        display: none;
+    }
+
+    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show4 .links .home-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu,
+    .navbar .nav-links.show2 .links .more-sub-menu {
+        display: block;
+    }
+
+    .contact-number a {
+        margin-top: 20px;
+        color: black;
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-height: 1180px) and (orientation : portrait) {
+    nav .navbar {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+
+    nav .navbar .logo a {
+        font-size: 27px;
+    }
+
+    nav .navbar .links li {
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
+    nav .navbar .links li a {
+        font-size: 15px;
+    }
+
+    .section-img img {
+        max-width: 90%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+
+
+    .section-box {
+
+        background-color: #131315;
+        padding: 40px 50px 40px 50px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        right: 0;
+        z-index: 1;
+
+    }
+
+    /* .conference {
+        margin-top: 50px;
+    } */
+    .conference-heading h5 {
+        margin-top: 200px;
+        width: 100%;
+        color: #131315;
+        font-family: "Cambay", Sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .conference-img3 img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        right: 10%;
+        top: 0%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    .conference-img4 img {
+        width: 100%;
+        position: absolute;
+        top: 20%;
+    }
+
+    .background-img {
+        background-image: url("../landingpage5/images/male-speaker-speak-to-diverse-business-people-in-YLUE4PT.jpg");
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .speaker-heading h5 {
+        width: 100%;
+        font-family: "Cambay", Sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin-top: 150px;
+    }
+
+    .speaker-button button {
+        background-color: transparent;
+        padding: 10px 30px 10px 30px;
+        border-color: white;
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+
+    }
+
+    .contact-background {
+        background-image: url(../landingpage5/images/business-people-looking-at-camera-in-business-D4JVLS3.jpg);
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .icon-location i {
+        background-color: transparent;
+        color: white;
+        margin-top: 70px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50px;
+        margin-left: 0px;
+        border: 1px solid;
+        border-radius: 60px;
+        padding: 10px 20px;
+    }
+
+    .profile-info {
+        background-color: #FFFFFF;
+        height: auto;
+    }
+
+    .contact-number a {
+        margin-top: 20px;
+        color: black;
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+
+
+}
+
+@media (max-width: 920px) {
+    .main-conference {
+        margin-top: 0px;
+    }
+
+    .conference-img3 img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        /* left: 25%; */
+        right: 10%;
+        top: 20%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    .conference-img4 img {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+    }
+
+    .speaker-heading h5 {
+        width: 100%;
+        font-family: "Cambay", Sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin-top: 120px;
+    }
+
+    .speaker-button button {
+        border: 3px solid;
+        background-color: transparent;
+        padding: 15px 45px 15px 45px;
+        border-color: white;
+        text-align: center;
+        color: white;
+        margin-top: 0px;
+
+    }
+
+    .profile-info {
+        background-color: #FFFFFF;
+        height: auto;
+    }
+
+    .profile-info h3 {
+        /* margin-top: 20px; */
+        padding: 7px;
+        text-align: center;
+        font-family: "Cambay", Sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .profile-info h5 {
+        text-align: center;
+        font-family: "Cambay", Sans-serif;
+        font-size: 14px;
+    }
+
+
+    .speaker-button button {
+        background-color: transparent;
+        padding: 10px 25px 10px 25px;
+        border-color: white;
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+
+    }
+
+    .background-img {
+        background-image: url("../landingpage5/images/male-speaker-speak-to-diverse-business-people-in-YLUE4PT.jpg");
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .schdule {
+        height: auto;
+    }
+
+    .registeration-heading h5 {
+        width: 100%;
+        color: #131315;
+        font-family: "Cambay", Sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .contact-number a {
+        margin-top: 20px;
+        color: black;
+        font-size: 15px;
+        /* font-weight: bold; */
+    }
+
+    .info-address p {
+        margin-top: 20px;
+        width: 100%;
+        color: white;
+        font-size: 15px;
+    }
+
+    .clevent-para p {
+        width: 100%;
+        margin-top: 20px;
+        color: #6D6F82;
+        font-size: 15px;
+    }
+
+    .address-para p {
+        width: 100%;
+        margin-top: 20px;
+        color: #6D6F82;
+        font-size: 15px;
+    }
+
+    .contact-para p {
+        width: 100%;
+        margin-top: 20px;
+        color: #6D6F82;
+        font-size: 15px;
+    }
+
+    .profiel-info h5 {
+        margin-top: 10px;
+        color: #131315;
+        font-family: "Cambay", Sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .conference-heading h5 {
+        margin-top: 230px;
+        width: 100%;
+        color: #131315;
+        font-family: "Cambay", Sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+}
+
+
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .sechdule-time {
+        padding: 43px;
+    }
+
+    .background {
+        /* background-color: #465FFF; */
+        opacity: 0.9;
+        background: #5E73Fd;
+        width: 100%;
+        height: 110px;
+        height: 100%;
+    }
+
+}
